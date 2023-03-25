@@ -42,7 +42,6 @@ def check_city(call) -> None:
     Обработчик inline кнопок, запоминает id города
 
     :param call: данные о кнопке
-
     :return: None
     """
 
@@ -122,7 +121,7 @@ def callback_inline(call: CallbackQuery):
 
 @bot.callback_query_handler(func=None, state=HotelPriceState.count_hotel)
 def get_count_hotels(call) -> None:
-    """ Колбэк для получения количества выводимых отелей """
+    """ Колбек для получения количества выводимых отелей """
     with bot.retrieve_data(call.message.chat.id, call.message.chat.id) as hotels_data:
         hotels_data['hotels_count'] = int(call.data)
         bot.send_message(call.message.chat.id, 'Отлично, а фотографии к ним прилагать?',
@@ -135,11 +134,11 @@ def get_count_hotels(call) -> None:
 
 @bot.callback_query_handler(func=None, state=HotelPriceState.count_photos)
 def count_photos(call) -> None:
-    """ Коллбэк для получения количества фотографий """
+    """ Колбек для получения количества фотографий """
     bot.edit_message_text(chat_id=call.message.chat.id,
                           message_id=call.message.id,
                           text=f'Показать изображений для каждого отеля: {call.data}')
-    bot.send_message(call.message.chat.id, 'Подожди ... Идет загрузка ...')
+    bot.send_message(call.message.chat.id, 'Подожди... Идет загрузка...')
     bot.set_state(call.message.chat.id, HotelPriceState.info, call.message.chat.id)
     with bot.retrieve_data(call.message.chat.id, call.message.chat.id) as hotels_data:
         command = hotels_data['command']

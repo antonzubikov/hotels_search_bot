@@ -6,7 +6,7 @@ def city_markup(cities):
     Функция для создания Inline кнопок, которые указывают на города
 
     :param cities: список городов
-    :return: кнопки, текст - имя города, callback_data - id города
+    :return: кнопки, текст — имя города, callback_data — ID города
     """
     destinations = InlineKeyboardMarkup()
     for city in cities:

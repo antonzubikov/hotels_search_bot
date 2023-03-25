@@ -32,7 +32,7 @@ def get_age(message: Message) -> None:
             with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
                 data['age'] = message.text
         else:
-            bot.send_message(message.from_user.id, 'Возраст - это число от 1 до 100')
+            bot.send_message(message.from_user.id, 'Возраст — это число от 1 до 100')
     else:
         bot.send_message(message.from_user.id, 'Возраст может быть только числом')
 

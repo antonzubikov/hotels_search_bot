@@ -121,7 +121,7 @@ def request_hotels(user_id, chat_id, sort_order, is_reverse=False):
                     'price': price,
                     'total_price': total_price,
                     'rating': hotel['reviews']['score'] if 'reviews' in hotel.keys() else 'Нет',
-                    'linc': f'https://www.hotels.com/h{hotel["id"]}.Hotel-Information',
+                    'link': f'https://www.hotels.com/h{hotel["id"]}.Hotel-Information',
                     'photos': photos
                 }
 

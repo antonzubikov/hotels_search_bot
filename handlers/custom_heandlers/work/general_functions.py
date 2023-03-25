@@ -97,7 +97,7 @@ def get_search_results(
                         if hotel['price'] is not None else ''
 
                     text += f'Рейтинг: {hotel["rating"]}\n' \
-                            f'Ссылка на отель: {hotel["linc"]}\n'
+                            f'Ссылка на отель: {hotel["link"]}\n'
 
                     dbworker.set_hotels((
                         hotels_data['city_id'],
@@ -105,7 +105,7 @@ def get_search_results(
                         name,
                         hotel['address'],
                         hotel['price'],
-                        hotel['linc']
+                        hotel['link']
                     ))
 
                     if count_photos:

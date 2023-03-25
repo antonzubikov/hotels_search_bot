@@ -11,3 +11,4 @@ def distance():
     dest.add(InlineKeyboardButton(text='Мили', callback_data='миль 1 мили'))
 
     return dest
+

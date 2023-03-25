@@ -48,10 +48,9 @@ def get_city(message: Message, stop_iter=5) -> None:
 @bot.callback_query_handler(func=None, state=HotelBestPriceState.check_city)
 def check_city(call) -> None:
     """
-    Обработчик inline кнопок, запоминает id города
+    Обработчик inline кнопок, запоминает ID города
 
     :param call: данные о кнопке
-
     :return: None
     """
 
@@ -85,7 +84,7 @@ def price_max(message: Message) -> None:
         with bot.retrieve_data(message.from_user.id, message.chat.id) as hotels_data:
             if int(message.text) > hotels_data['price_min']:
                 hotels_data['price_max'] = int(message.text)
-                bot.send_message(message.from_user.id, 'Таак, напиши максимальное расстояние от центра города')
+                bot.send_message(message.from_user.id, 'Так, напиши максимальное расстояние от центра города')
                 bot.set_state(message.from_user.id, HotelBestPriceState.distance_max, message.chat.id)
             else:
                 bot.send_message(message.from_user.id, 'Некорректная цена!')

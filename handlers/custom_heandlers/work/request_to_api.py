@@ -44,7 +44,7 @@ def request_by_city(city_name: str) -> List:
                                'destination_id': dest['gaiaId'] if 'gaiaId' in dest.keys() else dest['hotelId']
                                })
         else:
-            raise PermissionError('К сожалению, такой город не найден. Напиши другой)')
+            raise PermissionError('К сожалению, такой город не найден. Напиши другой')
 
         return cities
 

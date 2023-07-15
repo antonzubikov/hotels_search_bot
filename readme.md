@@ -1,13 +1,14 @@
 # **Hotel Search Bot**
 
 
+## Project description:
 Это телеграм бот, с помощью которого можно получать информацию об отелях, расположенных по всему миру по разным критериям. В работе используется Rapid API.
 
-## Used technology:
+## Used technologies:
 
 * Python (3.10);
-* PyTelegramBotAPI (Telegram Bot framework);
-* SQLite3 (database);
+* PyTelegramBotAPI (Telegram Bot framework; 4.7.0);
+* SQLite3 (relational database; 3.39.5);
 * requests (2.28.1);
 * telebot–calendar (1.2)
 

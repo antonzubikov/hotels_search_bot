@@ -10,7 +10,7 @@
 * PyTelegramBotAPI (Telegram Bot framework; 4.7.0);
 * SQLite3 (relational database; 3.39.5);
 * requests (2.28.1);
-* telebot–calendar (1.2)
+* telebot–calendar (Telegram calendar display tool; 1.2)
 
 
 ## Installation:

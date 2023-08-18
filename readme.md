@@ -1,5 +1,9 @@
 # **Hotel Search Bot**
 
+<img width="750" alt="tg_1" src="https://github.com/antonzubikov/hotels_search_bot/assets/124088976/e9fa7737-c8b8-487a-b4ee-c7f9de2ba12f">
+<img width="750" alt="tg_2" src="https://github.com/antonzubikov/hotels_search_bot/assets/124088976/73d9d848-f196-4898-affe-9987ab5e5757">
+<img width="750" alt="tg_3" src="https://github.com/antonzubikov/hotels_search_bot/assets/124088976/2c4f76dc-d3b5-41e0-b7df-c1096e803069">
+
 
 ## Project description:
 Это телеграм бот, с помощью которого можно получать информацию об отелях, расположенных по всему миру по разным критериям. В работе используется Rapid API.
